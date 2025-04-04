@@ -4,5 +4,4 @@ import AllPlayers from './components/AllPlayers';
 import SinglePlayer from './components/SinglePlayer';
 import NewPlayerForm from './components/NewPlayerForm';
 
-const cohortName = "2412-ftb-mt-web-pt";
-const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/${cohortName}`;
+const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/2803-PUPPIES/players`;
