@@ -30,6 +30,7 @@ function SinglePlayer() {
       <h2>{player.name}</h2>
       <p>Breed: {player.breed}</p>
       <p>Status: {player.status}</p>
+      <p>TeamID: {player.teamId}</p>
       {player.imageUrl && <img src={player.imageUrl} alt={player.name} width="200" />}
       <br />
       <Link to="/">⬅ Back to All Players</Link>
