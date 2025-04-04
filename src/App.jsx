@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import AllPlayers from './components/AllPlayers';
 import SinglePlayer from './components/SinglePlayer';
 import NewPlayerForm from './components/NewPlayerForm';
 
-const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/2803-PUPPIES/players`;
+const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/2803-PUPPIES`;
 
 function App() {
   const [players, setPlayers] = useState([]);
@@ -25,7 +25,14 @@ function App() {
 
   return (
     <Router>
-      <h1> Puppy Bowl </h1>
+      <h1>Puppy Bowl</h1>
+
+      <div>
+        <Link to="/new">
+          <button>➕ Add New Player</button>
+        </Link>
+      </div>
+
       <Routes>
         <Route path="/" element={<AllPlayers players={players} />} />
         <Route path="/player/:id" element={<SinglePlayer />} />
@@ -36,4 +43,3 @@ function App() {
 }
 
 export default App;
-// routing and fetching the API

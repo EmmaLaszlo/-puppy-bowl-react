@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-const cohortName = "2302-ACC-PT-WEB-PT-B";
-const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/${cohortName}`;
+const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/2803-PUPPIES`;
 
 function NewPlayerForm({ setPlayers }) {
   const [name, setName] = useState('');
