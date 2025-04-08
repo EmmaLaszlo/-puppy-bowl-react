@@ -14,7 +14,7 @@ function NewPlayerForm({ setPlayers }) {
             const res = await fetch(`${APIURL}/players`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ name, breed, imageUrl }) // status not accepted by API
+                body: JSON.stringify({ name, breed, imageUrl }) 
             });
 
             const result = await res.json();
